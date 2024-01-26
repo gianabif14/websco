@@ -7,23 +7,25 @@ body, html {
   height: 100%;
   margin: 0;
 }
+#imagewrapper {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+}
 
-.bg {
-  /* The image used */
-  background-image: url("/assets/testingpage.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#image {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    left: -50%;
 }
 </style>
 </head>
 <body>
-
+<div id="imagewrapper">
+    <img src="/assets/testingpage.jpg" id="image" />
+</div>
 <div class="bg"></div>
 
 <p> anjay </p>
